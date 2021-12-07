@@ -48,35 +48,48 @@ export const Form = () => {
         <div>
             <form id="formulario" onSubmit={handleSubmit}>
                 <h2>Registrar un nuevo autor</h2>
-                <hr />
-                <div>
-                    <label>Foto del autor</label>
-                    <input id="botonImagen" type="file" name="imagen" value={imagen} onChange={handleFile}/>
-                    </div>
+                <div className="ContainerInputs">
                 
-                    <div>
-                    <label>Nombre del autor</label>
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Nombre del autor</label>
+                        </div>
                     <input id="inputNombre" name="nombre" value={nombre} onChange={handleChange}/>
                     </div>
                 
-                    <div>
-                    <label>Nacionalidad del autor</label>
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Nacionalidad del autor</label>
+                        </div>
                     <input id="inputNacionalidad" name="pais" value={pais} onChange={handleChange}/>
                     </div>
                 
-                    <div>
-                    <label>Libros publicados</label>
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Libros publicados</label>
+                        </div>
                     <input id="inputLibros" type="number" name="libros" value={libros} onChange={handleChange}/>
                     </div>
                 
-                    <div>
-                    <label>Tu libro favorito</label>
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Tu libro favorito</label>
+                        </div>
                     <input id="inputFavorito" name="favorito" value={favorito} onChange={handleChange}/>
                     </div>
                 
-                    <div>
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Foto del autor</label>
+                        </div>
+                    <input id="botonImagen" type="file" name="imagen" value={imagen} onChange={handleFile}/>
+                    </div>
+                
+                    <div className="boton">
                     <button id="btnAgregar" onClick={postData}>Agregar nuevo Autor</button>
                     </div>
+
+                </div>
             </form>
         </div>
     )

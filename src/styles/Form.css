@@ -3,22 +3,34 @@
     box-sizing: border-box;
     padding: 3%;
     margin-left: 30%;
-    border: 1px solid tomato;
+    border: 1px solid #000000;
     margin-top: 5%;
+    margin-bottom: 60px;
+    width: 600px;
+    height: auto;
 }
 
 #formulario h2 {
     text-align: center;
-    color: rgb(173, 69, 69);
-    ;
+    color: #000000;
+}
+
+.inputs {
+    display: flex;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 button {
-    color: rgb(173, 69, 69);
-    background-color: white;
-    border: 1px solid tomato;
-    font-size: 100%;
-    margin-left: 40%;
+    border: 2px solid #FF87CA;
+    border-radius: 80px;
+    color: #9C19E0;
+    background: pink;
+    font-size: 15px;
 }
 
 button:hover {
@@ -26,10 +38,15 @@ button:hover {
     background: #F4BEEE;
 }
 
+.containerLabel {
+    width: 150px;
+    margin-right: 10px;
+}
 
 input {
     margin-bottom: 10px;
     margin-left: 10px;
+    width: 300px;
 }
 
 select {
