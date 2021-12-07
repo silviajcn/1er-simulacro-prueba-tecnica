@@ -6,6 +6,14 @@
     text-align: center;
 }
 
+.tituloPrincipal{
+    font-size: 50px;
+}
+
+.parrafoInicio{
+    font-size: 20px;
+}
+
 .containerImagenes{
     margin-bottom: 20px;
 }
