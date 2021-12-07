@@ -12,7 +12,7 @@ export const Navbar = () => {
                 <Link className="link" to="/"><FaBook /></Link>
                 <Link className="link" to="/">Home</Link>
                 <Link className="link" to="/Registro">Registrar autor</Link>
-                <Link className="link" to="/Listar">Listado de autores</Link>
+                <Link className="link" to="/Listar">Lista de autores</Link>
                 </nav>
             </div>
             <hr/>
