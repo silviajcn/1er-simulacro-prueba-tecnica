@@ -21,6 +21,11 @@ button {
     margin-left: 40%;
 }
 
+button:hover {
+    cursor: pointer;
+    background: #F4BEEE;
+}
+
 
 input {
     margin-bottom: 10px;

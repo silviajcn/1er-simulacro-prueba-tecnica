@@ -30,6 +30,8 @@ export const List = () => {
     }
 
     return (
+        <div>
+        <h1 className="tituloPrincipal">Autores leidos</h1>
         <div className="ContainerTabla">
             <table className="tabla">
                 <thead>
@@ -46,18 +48,19 @@ export const List = () => {
                    {
                         autores.map(autor => (
                             <tr key={autor.id}>
-                                <td><img src={autor.imagen} alt="..." /></td>
+                                <td><img className="fotoAutor" src={autor.imagen} alt="..." /></td>
                                 <td>{autor.nombre}</td>
                                 <td>{autor.pais}</td>
                                 <td>{autor.libros}</td>
                                 <td>{autor.favorito}</td>
-                                <td><button onClick={()=> dataDelete(autor.id)}>Eliminar</button></td>
+                                <td><button className="botonEliminar" onClick={()=> dataDelete(autor.id)}>Eliminar</button></td>
                             </tr>
                        ))    
                    }
                 </tbody>
             </table>
-        </div>
+            </div>
+            </div>
     )
 }
 
