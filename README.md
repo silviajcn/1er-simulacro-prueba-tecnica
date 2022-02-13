@@ -2,11 +2,11 @@
 
 ## 📌 ¿De qué se trata el proyecto La Biblioteca de Silvia? 
 
-La Biblioteca de Silvia es una idea que desarrollé durante un Simulacro de prueba técnica en el bootcamp de Academia Geek.
+La Biblioteca de Silvia es una idea que desarrollé durante un simulacro de prueba técnica en el bootcamp de Academia Geek.
 
 - Tiempo que tuve para el desarrollo de la prueba: dos horas.
 
-Esta idea es el primer esbozo de un proyecto que quiero desarrollar: una pagina web que me permita cargar las lecturas que hago, asi como toda la informacion acerca del libro (autor del libro, genero literario, numero de pÁginas, fecha de la lectura, portada del libro, etc).
+Esta idea es el primer esbozo de un proyecto que quiero desarrollar: una pagina web que me permita cargar las lecturas que hago, asi como toda la información acerca del libro (autor del libro, genero literario, numero de páginas, fecha de la lectura, portada del libro, etc).
 
 ## Puede visitar La Biblioteca de Silvia aquí: https://1er-simulacro-prueba-tecnica.vercel.app/
     
@@ -33,8 +33,6 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 * Para la base de datos del proyecto se utilizó Heroku.
 
 * En el proyecto se debe cambiar la configuracion dentro de la constante fileUpload con datos personales de su cuenta en Cloudinary. Esta constante se encuentra en la siguiente direccion: src > helpers > fileUpload.js > fileUpload (leer nota 2).
-
-Nota 1 : para cambiar estos datos es necesario contar con una cuenta en Firebase, crear un nuevo proyecto, y en la opcion de Configuracion del proyecto, encontrara la opcion de aplicaciones web, al selecionar esta ocpion optendra la configuracion del SDK del proyecto, en el SDK encontrara su confirguracion personal de la constante firebaseConfig.
 
 Nota 2: para cambiar estos datos es necesario contar con una cuenta de developer en Cloudinary, obtener la url de la api de cloudinary (a esta url se le debe agregar al final lo siguiente: /upload), ir a la seccion settings, luego a la seccion Upload, y en el apartado de Upload presets, agregar un nuevo Udloap preset, en este paso es necesario darle el nombre que se desee, cambiar el Signing Mode a Unsigned, darle un nombre a la carpeta donde se subiran las imagenes y guardar dicha configuracion. Hacer los cambios respectivos dentro del proyecto con estos datos.
 
