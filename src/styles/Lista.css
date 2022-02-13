@@ -1,32 +1,54 @@
-.tituloPrincipal {
+.container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-
-.tabla {
-    color: #000000;
-    border: 1px solid #000000;
-    width: 100%;
-    align-content: center;
-    text-align: center;
-    margin-top: 5%;
-    padding-right: 4%;
     margin-bottom: 50px;
 }
 
+.tituloPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLibros {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 450px 450px 450px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid gray; */
+    /* background-color: antiquewhite; */
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 5px 5px 12px #888;
+}
+
+.containerImg {
+    height: 240px;
+}
+
 .fotoAutor {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 220px;
 }
 
 .botonEliminar {
-    border: 2px solid #FF87CA;
-    border-radius: 80px;
-    color: #9C19E0;
-    background: pink;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: #000000;
+    background: #fff;
 }
 
 .botonEliminar:hover {
     cursor: pointer;
-    background: #F4BEEE;
+    background: pink;
 }

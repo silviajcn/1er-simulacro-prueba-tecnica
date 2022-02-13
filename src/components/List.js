@@ -5,7 +5,7 @@ import '../styles/Lista.css';
 
 export const List = () => {
 
-    const [autores, setAutores] = useState([])
+    const [libros, setLibros] = useState([])
 
     useEffect(() => {
         getData()
@@ -14,7 +14,7 @@ export const List = () => {
     const getData = () => {
         axios.get(url)
             .then(response => {
-                setAutores(response.data);
+                setLibros(response.data);
             }).catch(error => {
                 console.log(error);
         })
@@ -23,44 +23,45 @@ export const List = () => {
     const dataDelete = (id) => {
         axios.delete(url + id)
             .then(response => {
-            getData() 
+                getData() 
             }).catch(error => {
-            console.log(error)
+                console.log(error)
         })
     }
 
     return (
-        <div>
-        <h1 className="tituloPrincipal">Autores leidos</h1>
-        <div className="ContainerTabla">
-            <table className="tabla">
-                <thead>
-                    <tr>
-                    <th>Portada del autor</th>
-                    <th>Nombre del autor</th>
-                    <th>Nacionalidad</th>
-                    <th>Libros publicados</th>
-                    <th>Tu libro favorito</th>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                   {
-                        autores.map(autor => (
-                            <tr key={autor.id}>
-                                <td><img className="fotoAutor" src={autor.imagen} alt="..." /></td>
-                                <td>{autor.nombre}</td>
-                                <td>{autor.pais}</td>
-                                <td>{autor.libros}</td>
-                                <td>{autor.favorito}</td>
-                                <td><button className="botonEliminar" onClick={()=> dataDelete(autor.id)}>Eliminar</button></td>
-                            </tr>
-                       ))    
-                   }
-                </tbody>
-            </table>
+        <div className="container">
+            <h1 className="tituloPrincipal">Libros leídos</h1>
+
+            <div className="containerLibros">
+                {
+                    libros.map(autor => (
+                        <div className="cards" key={autor.id}>
+                            <div className='containerImg'>
+                                <img className="fotoAutor" src={autor.imagen} alt="portada" />
+                            </div>
+
+                            <div>
+                                <div>
+                                    <h3>Título: <strong>{autor.nombre}</strong></h3>
+                                </div>
+
+                                <div>
+                                    <p>Genero literario: <strong>{autor.genero}</strong></p>
+                                    <p>Autor: <strong>{autor.autor} </strong>({autor.nacionalidad}).</p>
+                                    <p>Fecha de lectura: <strong>{autor.fecha} </strong></p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button className="botonEliminar" onClick={()=> dataDelete(autor.id)}>Eliminar libro</button>
+                            </div>
+                                
+                        </div>
+                    ))    
+                }
             </div>
-            </div>
+        </div>
     )
 }
 

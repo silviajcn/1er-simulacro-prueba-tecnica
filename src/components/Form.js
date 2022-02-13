@@ -6,22 +6,30 @@ import '../styles/Form.css';
 
 export const Form = () => {
 
-    const [autor, setAutores] = useState({
+    const [libros, setLibros] = useState({
         imagen: '',
         nombre: '',
-        pais: '',
-        libros: '',
-        favorito: ''
+        genero: '',
+        autor: '',
+        nacionalidad: '',
+        // fecha: '',
     })
 
-    const { imagen, nombre, pais, libros, favorito } = autor
+    const {
+        imagen,
+        nombre,
+        genero,
+        autor,
+        nacionalidad,
+        // fecha
+    } = libros
     
     const handleChange = ({ target }) => {
-        setAutores({
-            ...autor,
+        setLibros({
+            ...libros,
             [target.name] : target.value
         })
-        console.log(autor);
+        //console.log(libros);
     }
 
     const handleSubmit = (e) => {
@@ -32,14 +40,14 @@ export const Form = () => {
         const file = e.target.files[0]
         fileUpload(file)
             .then(response => {
-                autor.imagen = response
+                libros.imagen = response
             }).catch(error => {
                 console.log(error);
             })
     }
 
     const postData = () => {
-        axios.post(url, autor)
+        axios.post(url, libros)
             .then(response => console.log(response.data))
             .catch(error => console.log(error))
     }
@@ -47,36 +55,43 @@ export const Form = () => {
     return (
         <div>
             <form id="formulario" onSubmit={handleSubmit}>
-                <h2>Registrar un nuevo autor</h2>
+                <h2>Registrar libros leídos</h2>
                 <div className="ContainerInputs">
+                
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Nombre del libro</label>
+                        </div>
+                    <input id="inputLibro" name="nombre" value={nombre} onChange={handleChange}/>
+                    </div>
+                
+                    <div className="inputs">
+                        <div className="containerLabel">
+                            <label>Genero literario</label>
+                        </div>
+                    <input id="inputGenero" name="genero" value={genero} onChange={handleChange}/>
+                    </div>
                 
                     <div className="inputs">
                         <div className="containerLabel">
                             <label>Nombre del autor</label>
                         </div>
-                    <input id="inputNombre" name="nombre" value={nombre} onChange={handleChange}/>
+                    <input id="inputAutor" type="text" name="autor" value={autor} onChange={handleChange}/>
                     </div>
                 
                     <div className="inputs">
                         <div className="containerLabel">
                             <label>Nacionalidad del autor</label>
                         </div>
-                    <input id="inputNacionalidad" name="pais" value={pais} onChange={handleChange}/>
+                    <input id="inputNacionalidad" name="nacionalidad" value={nacionalidad} onChange={handleChange}/>
                     </div>
-                
-                    <div className="inputs">
+
+                    {/* <div className="inputs">
                         <div className="containerLabel">
-                            <label>Libros publicados</label>
+                            <label>Fecha de culminación de lectura</label>
                         </div>
-                    <input id="inputLibros" type="number" name="libros" value={libros} onChange={handleChange}/>
-                    </div>
-                
-                    <div className="inputs">
-                        <div className="containerLabel">
-                            <label>Tu libro favorito</label>
-                        </div>
-                    <input id="inputFavorito" name="favorito" value={favorito} onChange={handleChange}/>
-                    </div>
+                    <input id="botonFecha" type="date" name="fecha" value={fecha}/>
+                    </div> */}
                 
                     <div className="inputs">
                         <div className="containerLabel">
