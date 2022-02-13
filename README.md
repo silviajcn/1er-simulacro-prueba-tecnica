@@ -42,7 +42,7 @@ Para la creación del proyecto se utilizaron las siguientes herramientas de desa
 * Correr el comando ```npm install``` para instalar correctamente las dependencias del proyecto
 * Para levantar el servidor local se debe correr el comando ```npm start```
 
-* Para la base de datos del proyecto se utilizó Heroku.
+* Para la base de datos del proyecto se utilizó Heroku. Link de la endpoint: https://primersimulacro.herokuapp.com/registros
 
 * En el proyecto se debe cambiar la configuracion dentro de la constante fileUpload con datos personales de su cuenta en Cloudinary. Esta constante se encuentra en la siguiente direccion: src > helpers > fileUpload.js > fileUpload (leer nota 1).
 
