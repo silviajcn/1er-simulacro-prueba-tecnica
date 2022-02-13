@@ -37,7 +37,7 @@ Nota 2: para cambiar estos datos es necesario contar con una cuenta de developer
 
 ## 🔍 Vistas 
 
-<img width="100%" align="center" alt="https://res.cloudinary.com/silviajcn/image/upload/v1643473814/Mi%20Portafolio/Proyects/silvislibrary_hbjezs.png" />
+![silvislibrary_hbjezs](https://user-images.githubusercontent.com/88461234/153735366-7b6531e6-6132-4f86-a062-e5ff44d1481e.png)
 
 ## 🌟 Autor
 
