@@ -36,7 +36,7 @@ export const List = () => {
             <table className="tabla">
                 <thead>
                     <tr>
-                    <th>Foto del autor</th>
+                    <th>Portada del autor</th>
                     <th>Nombre del autor</th>
                     <th>Nacionalidad</th>
                     <th>Libros publicados</th>

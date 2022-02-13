@@ -80,7 +80,7 @@ export const Form = () => {
                 
                     <div className="inputs">
                         <div className="containerLabel">
-                            <label>Foto del autor</label>
+                            <label>Portada del libro</label>
                         </div>
                     <input id="botonImagen" type="file" name="imagen" value={imagen} onChange={handleFile}/>
                     </div>
