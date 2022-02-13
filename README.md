@@ -22,7 +22,7 @@ Esta idea es el primer esbozo de un proyecto que quiero desarrollar: una pagina 
 
  https://1er-simulacro-prueba-tecnica.vercel.app/
     
-# 💎 Proyecto
+## 💎 Proyecto
 
 Para la creación del proyecto se utilizaron las siguientes herramientas de desarrollo:
 
