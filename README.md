@@ -1,73 +1,44 @@
-# Getting Started with Create React App
+# 📚 La Biblioteca de Silvia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 ¿La Biblioteca de Silvia? 
+La Biblioteca de Silvia es una idea que desarrollé durante un Simulacro de prueba tecnica en el bootcamp de Academia Geek. El tiempo para el desarrollo de la prueba era de dos horas.
 
-## Available Scripts
+## Puede visitar La Biblioteca de Silvia aquí: https://1er-simulacro-prueba-tecnica.vercel.app/
 
-In the project directory, you can run:
+![home](https://user-images.githubusercontent.com/88461234/150698098-c27325cb-0ec5-40cb-915d-a3d4feeca2f7.png)
 
-### `npm start`
+    
+# 💎 Proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para la creación del proyecto se utilizaron las siguientes herramientas de desarrollo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* ```react```
+* ```react-router-dom```
+* ```axios```
+* ```bootstrap```
+* ```react-bootstrap```
+* ```react-icons```
+* ```styled-components```
 
-### `npm test`
+## 🔥 Descarga del proyecto e Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Clonar el repositorio
+* Abrir el proyecto en Visual Studio Code (o editor de confianza)
+* Abrir la terminal del editor
+* Correr el comando ```npm install``` para instalar correctamente las dependencias del proyecto
+* Para levantar el servidor local se debe correr el comando ```npm start```
 
-### `npm run build`
+* Se debe tener en cuenta que para la utilización de Firebase, se deben cambiar los datos de la constante firebaseConfig con datos de una cuenta personal de Firebase. Esta constante se encuentra en la siguiente direccion: src > firebase > firebaseConfig.js > firebaseConfig (leer nota 1).
+* De igual modo, se debe cambiar la configuracion dentro de la constante fileUpload con datos personales de su cuenta en Cloudinary. Esta constante se encuentra en la siguiente direccion: src > helpers > fileUpload.js > fileUpload (leer nota 2).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Nota 1 : para cambiar estos datos es necesario contar con una cuenta en Firebase, crear un nuevo proyecto, y en la opcion de Configuracion del proyecto, encontrara la opcion de aplicaciones web, al selecionar esta ocpion optendra la configuracion del SDK del proyecto, en el SDK encontrara su confirguracion personal de la constante firebaseConfig.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Nota 2: para cambiar estos datos es necesario contar con una cuenta de developer en Cloudinary, obtener la url de la api de cloudinary (a esta url se le debe agregar al final lo siguiente: /upload), ir a la seccion settings, luego a la seccion Upload, y en el apartado de Upload presets, agregar un nuevo Udloap preset, en este paso es necesario darle el nombre que se desee, cambiar el Signing Mode a Unsigned, darle un nombre a la carpeta donde se subiran las imagenes y guardar dicha configuracion. Hacer los cambios respectivos dentro del proyecto con estos datos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔍 Vistas 
 
-### `npm run eject`
+<img width="100%" align="center" alt="https://res.cloudinary.com/silviajcn/image/upload/v1643473814/Mi%20Portafolio/Proyects/silvislibrary_hbjezs.png" />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🌟 Autor
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-# Link de despliegue en Vercel: https://1er-simulacro-prueba-tecnica.vercel.app/
+* **Silvia C. Navarro**  - [@silviajcn](https://github.com/silviajcn)
