@@ -1,6 +1,6 @@
 # 📚 La Biblioteca de Silvia
 
-La Biblioteca de Silvia es una idea que desarrollé durante un simulacro de prueba técnica en el bootcamp de Academia Geek.
+La Biblioteca de Silvia es una idea que desarrollé durante un simulacro de prueba técnica.
 
 Esta idea es el primer esbozo de un proyecto que quiero desarrollar: una pagina web que me permita cargar las lecturas que hago, asi como toda la información acerca del libro (autor del libro, genero literario, numero de páginas, fecha de la lectura, portada del libro, etc).
 
