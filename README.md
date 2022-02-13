@@ -18,7 +18,7 @@ Esta idea es el primer esbozo de un proyecto que quiero desarrollar: una pagina 
 
 - Tiempo que tuve para el desarrollo de la prueba: 3.5 horas.
 
-## Puede visitar La Biblioteca de Silvia aquí: https://1er-simulacro-prueba-tecnica.vercel.app/
+## 💻 Puede visitar La Biblioteca de Silvia aquí: https://1er-simulacro-prueba-tecnica.vercel.app/
     
 # 💎 Proyecto
 
