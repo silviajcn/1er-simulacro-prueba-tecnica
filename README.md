@@ -20,7 +20,7 @@ Esta idea es el primer esbozo de un proyecto que quiero desarrollar: una pagina 
 
 ## 💻 Puede visitar La Biblioteca de Silvia aquí:
 
- https://1er-simulacro-prueba-tecnica.vercel.app/
+https://silvis-library.vercel.app/
     
 ## 💎 Proyecto
 
